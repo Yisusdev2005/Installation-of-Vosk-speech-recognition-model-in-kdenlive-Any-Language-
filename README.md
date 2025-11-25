@@ -6,7 +6,7 @@ The first step is to install the voice recognition model for the language of you
 > https://alphacephei.com/vosk/models
 
 # Second Step
-Open Kdenlive and go to the bar at the bottom of the screen under “Project” and click there:
+Open Kdenlive and go to the bar at the bottom of the screen under `Project` and click there:
 > Project ‣ Subtitle ‣ Add Subtitle ‣ Voice recognition
 
 <img src="https://github.com/Yisusdev2005/Installation-of-Vosk-speech-recognition-model-in-kdenlive-Any-Language-/blob/main/1.jpeg" width="80%"/>
@@ -66,6 +66,8 @@ exec kdenlive</pre>
   
 > chmod +x kdenlive_venv.sh
 
-- Finally, we just go to the dkenlive .desktop file, i.e., the executable, open it with nano or whatever text editor we have installed, find the exec line, and replace it with the .sh file we just created:
+- Finally, we just go to the dkenlive `.desktop` file or executable file, open it with nano or whatever text editor you have installed, find the `Exec` line, and replace it with the `.sh` file we just created on nano:
   
   > Exec=full/path/to/script/kdenlive_venv.sh %U
+
+And that's it! Kdenlive is now ready to automatically subtitle your audio tracks :)
