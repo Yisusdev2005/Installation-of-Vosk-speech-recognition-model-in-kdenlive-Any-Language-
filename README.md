@@ -62,11 +62,11 @@ source "$VENV_PATH/bin/activate"
 #The command for execute kdenlive
 exec kdenlive</pre>
 
-- You give permissions with execution using `chmod`:
+- Give it execution permissions with `chmod`:
   
 > chmod +x kdenlive_venv.sh
 
-- Finally, we just go to the dkenlive `.desktop` file or executable file, open it with nano or whatever text editor you have installed, find the `Exec` line, and replace it with the `.sh` file we just created on nano:
+- Finally, we just go to desktop and find the kdenlive `.desktop` file or executable file, open it with nano or whatever text editor you have installed, find the `Exec` line, and replace it with the `.sh` file we just created on nano:
   
   > Exec=full/path/to/script/kdenlive_venv.sh %U
 
