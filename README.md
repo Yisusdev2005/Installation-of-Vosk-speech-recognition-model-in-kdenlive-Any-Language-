@@ -33,5 +33,13 @@ Once all this is done, all that remains is to activate the environment and insta
 > source /home/$USER/.local/share/kdenlive/bin/activate
 > pip install srt srt-equalizer vosk setuptools
 
-# Last Step
+# Sixth Step
 We're almost done setting everything up, but keep in mind that if you close everything and open the program, it won't work because the environment is disabled and it won't recognize Vosk.
+So let's create a bash script to automate everything, from activating the environment created with the installed modules to running Kdenlive.
+- First, let's use nano to create a .sh file in any directory we want:
+  > cd Documentos/
+  
+  > nano kdenlive_venv.sh
+  
+- Here we gonna paste the content below:
+- 
