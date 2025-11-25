@@ -18,4 +18,20 @@ Now, you must check the “Custom model folder” box and paste the directory of
 <img src="https://github.com/Yisusdev2005/Installation-of-Vosk-speech-recognition-model-in-kdenlive-Any-Language-/blob/main/3.jpeg" width="80%"/>
 
 # Fourth step
-Once you get here, drag the downloaded `.zip` file of the model into the empty space below:
+Once here, drag the downloaded `.zip` file of the model into the empty space below and wait a few moments until it has uploaded, then close everything:
+![til](https://github.com/Yisusdev2005/Installation-of-Vosk-speech-recognition-model-in-kdenlive-Any-Language-/blob/main/Preview.gif)
+
+# Fifth Step
+You will need to install these Python modules (required) on your system:
+> sudo apt install python3-pip python3-venv python3-srt python3-pysrt python3-setuptools
+
+Then, go to the Kdenlive directory: `/home/$USER/.local/share/kdenlive`
+And here you must create a virtual or Python development environment (Use the `pwd` command to find out the full path of the directory if you are already in it from the file manager) to install the “Vosk” recognition model with this command:
+> python3 -m venv /home/$USER/.local/share/kdenlive
+
+Once all this is done, all that remains is to activate the environment and install the modules with pip for voice recognition:
+> source /home/$USER/.local/share/kdenlive/bin/activate
+> pip install srt srt-equalizer vosk setuptools
+
+# Last Step
+We're almost done setting everything up, but keep in mind that if you close everything and open the program, it won't work because the environment is disabled and it won't recognize Vosk.
